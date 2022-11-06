@@ -1,0 +1,44 @@
+.navbar {
+    display: flex;
+    height: 69px;
+    padding: 5px;
+
+    .imgCont {
+        display: flex;
+        margin: 10px;
+        justify-content: center;
+        @media (max-width: 1200px) {
+            flex: 1;
+        }
+    }
+
+    img {
+        max-height: 27px;
+        cursor: pointer;
+    }
+
+    .subMenu {
+        display: flex;
+        cursor: pointer;
+        justify-content: center;
+        align-items: center;
+        margin-left: 35px;
+        div {
+            padding: 0px 24px;
+            font-size: 15px;
+        }
+
+        @media (max-width: 1200px) {
+            display: none;
+        }
+    }
+}
+
+.insights{
+    display: block;
+    position: absolute;
+    height: 430px;
+    width: 100%;
+    background-color: red;
+    overflow: hidden;
+}
