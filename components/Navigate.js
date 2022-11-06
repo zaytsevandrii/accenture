@@ -1,19 +1,25 @@
+import Link from "next/link"
 import React, { useState } from "react"
 import StylesNav from "../styles/Navigate.module.scss"
 import Meta from "./Meta"
 const Navigate = ({ children }) => {
-    const [insights,setInsights] = useState(false)
-    const changeState = ()=>{
+    const [insights, setInsights] = useState(false)
+    const changeState = () => {
         setInsights(!insights)
     }
     return (
         <>
-        <Meta/>
+            <Meta />
 
             <div className={StylesNav.navbar}>
-                <div className={StylesNav.imgCont}>
-                    <img src='https://www.accenture.com/t20180820T080700Z__w__/gb-en/_acnmedia/Accenture/Dev/Redesign/Acc_Logo_Black_Purple_RGB.png' alt="" />
-                </div>
+                <Link className={StylesNav.imgCont} href="/">
+                    <div >
+                        <img
+                            src="https://www.accenture.com/t20180820T080700Z__w__/gb-en/_acnmedia/Accenture/Dev/Redesign/Acc_Logo_Black_Purple_RGB.png"
+                            alt=""
+                        />
+                    </div>
+                </Link>
                 <div className={StylesNav.subMenu}>
                     <div onClick={changeState}>Insights</div>
                     <div>Services</div>
@@ -21,10 +27,8 @@ const Navigate = ({ children }) => {
                     <div>Careers</div>
                     <div>About Accenture</div>
                 </div>
-                
             </div>
-            {insights&&
-            <div className={StylesNav.insights}>Insights true</div>}
+            {insights && <div className={StylesNav.insights}>Insights true</div>}
             <div>{children}</div>
         </>
     )
