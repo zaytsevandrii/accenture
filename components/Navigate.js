@@ -2,6 +2,12 @@ import Link from "next/link"
 import React, { useState } from "react"
 import StylesNav from "../styles/Navigate.module.scss"
 import Meta from "./Meta"
+import AboutAccenture from "./navElements/AboutAccenture"
+import Careers from "./navElements/Careers"
+import Industries from "./navElements/Industries"
+import Insights from "./navElements/Insights"
+import Services from "./navElements/Services"
+import NavMenu from "./NavMenu"
 const Navigate = ({ children }) => {
     const [insights, setInsights] = useState(false)
     const changeState = () => {
@@ -21,11 +27,11 @@ const Navigate = ({ children }) => {
                     </div>
                 </Link>
                 <div className={StylesNav.subMenu}>
-                    <div onClick={changeState}>Insights</div>
-                    <div>Services</div>
-                    <div>Industries</div>
-                    <div>Careers</div>
-                    <div>About Accenture</div>
+                    <NavMenu title='Insights'><Insights/></NavMenu>
+                    <NavMenu title='Services'><Services/></NavMenu>
+                    <NavMenu title='Industries'><Industries/></NavMenu>
+                    <NavMenu title='Careers'><Careers/></NavMenu>
+                    <NavMenu title='About Accenture'><AboutAccenture/></NavMenu>
                 </div>
             </div>
             {insights && <div className={StylesNav.insights}>Insights true</div>}
