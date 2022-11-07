@@ -48,6 +48,8 @@
     width: 100%;
     background-color: red;
     overflow: hidden;
+    z-index: 10;
+    position: fixed;
 }
 
 .progress{
