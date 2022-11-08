@@ -4,7 +4,7 @@
     left: 0;
     top: 0;
     background-color: white;
-    z-index: 6;
+    z-index: 7;
     width: 100%;
     height: 69px;
     padding: 5px;
@@ -27,14 +27,18 @@
     .subMenu {
         display: flex;
         padding-top: 11px;
-        cursor: pointer;
         justify-content: center;
         align-items: center;
+        background-color: white;
         justify-content: center;
         margin-left: 35px;
-        div {
+        cursor: pointer;
+        .navMenu {
             padding: 0px 23px;
             font-size: 15px;
+            .active{
+                font-weight: 600;
+            }
         }
 
         @media (max-width: 1200px) {
@@ -43,20 +47,152 @@
     }
 }
 
-.insights{
+.insights {
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    left: 0;
+    top: 69px;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    overflow: hidden;
+    z-index: 1;
+    position: fixed;
+    cursor: default;
+    border-top: 1px solid rgba(189, 184, 184, 0.425);
+
+    .secondaryNav {
+        display: flex;
+        flex: 1;
+        padding: 0 190px;
+    }
+    .leftBlock {
+        height: 100%;
+        padding: 57px 70px 50px 34px;
+        min-width: 325px;
+        max-width: 487px;
+        .boldP {
+            font-family: "Graphik SemiBold", "Arial", Sans-Serif;
+            font-weight: 750;
+            font-style: normal;
+            text-transform: uppercase;
+            font-size: 16px;
+            padding: 0;
+        }
+        .link {
+            color: #004dff;
+            padding-top: 10px;
+            font-size: 18px;
+            font-family: "Graphik Semibold", "Arial", sans-serif !important;
+            font-weight: 750;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+        p {
+            font-size: 14px;
+            font-family: "Graphik Regular", "Arial", Sans-Serif;
+            line-height: 20px;
+            padding-top: 15px;
+            letter-spacing: 0.5px;
+        }
+    }
+
+    .rightBlock {
+        height: 100%;
+        display: grid;
+        padding: 46px 20px 100px 20px;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        grid-column-gap:90px;
+        grid-row-gap: 0px;
+        font-family: "Graphik Regular", "Arial", Sans-Serif;
+        color: #004dff;
+        font-size: 16px;
+
+        .link:hover {
+            text-decoration: underline;
+        }
+    }
+}
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    left: 0;
+    flex: 1;
+    top: 69px;
+    height: 430px;
+    width: 100%;
+    font-family: "Graphik Regular", "Arial", Sans-Serif;
+    color: #004dff;
+    letter-spacing: 0.4px;
+    font-size: 16px;
+    background-color: white;
+    overflow: hidden;
+    z-index: 1;
+    position: fixed;
+
+    .secondaryNav {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0 200px 0 200px;
+        width: 100%;
+        flex: 1;
+
+        .servicesBlock {
+            display: grid;
+            padding: 55px 0px 60px 20px;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(6, 1fr);
+            grid-column-gap: 90px;
+
+            a {
+                display: flex;
+                flex: 1;
+                flex-wrap: wrap;
+            }
+        }
+    }
+}
+.industries {
     display: block;
     position: absolute;
     left: 0;
     top: 69px;
     height: 430px;
     width: 100%;
-    background-color: red;
+    background-color: white;
     overflow: hidden;
-    z-index: 10;
+    z-index: 1;
+    position: fixed;
+}
+.careers {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 69px;
+    height: 430px;
+    width: 100%;
+    background-color: white;
+    overflow: hidden;
+    z-index: 1;
+    position: fixed;
+}
+.aboutaccenture {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 69px;
+    height: 430px;
+    width: 100%;
+    background-color: white;
+    overflow: hidden;
+    z-index: 1;
     position: fixed;
 }
 
-.progress{
+.progress {
     height: 61px;
     background-color: #f2f2f2;
     position: sticky;
@@ -66,7 +202,7 @@
     @media (max-width: 1200px) {
         height: 8px;
         text-overflow: hidden;
-        p{
+        p {
             opacity: 0;
         }
     }
