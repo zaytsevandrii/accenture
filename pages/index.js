@@ -3,6 +3,7 @@ import PropgressNav from "../components/PropgressNav"
 import styles from "../styles/Home.module.scss"
 import Carousel from "react-bootstrap/Carousel"
 export default function Home() {
+    console.log('render')
     return (
         <>
             <PropgressNav />

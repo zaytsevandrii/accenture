@@ -7,7 +7,7 @@ const Insights = () => {
           <div className={StylesNav.secondaryNav}>
             <div className={StylesNav.leftBlock}>
                 <p className={StylesNav.boldP}>FEATURED CONTENT</p>
-                <Link href="/" className={StylesNav.link}>
+                <Link href="/insights/voices" className={StylesNav.link}>
                     Voices of Change
                 </Link>
                 <p>

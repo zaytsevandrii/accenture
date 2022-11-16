@@ -8,15 +8,13 @@ import Industries from "./navElements/Industries"
 import Insights from "./navElements/Insights"
 import Services from "./navElements/Services"
 import NavMenu from "./NavMenu"
-const Navigate = ({ children }) => {
-    const [insights, setInsights] = useState(false)
-    const changeState = () => {
-        setInsights(!insights)
-    }
+
+const Navigate = ({ children }) => {  
+    console.log('navrender')
+    
     return (
         <>
             <Meta />
-
             <div className={StylesNav.navbar}>
                 <Link className={StylesNav.imgCont} href="/">
                     <div >
@@ -27,14 +25,13 @@ const Navigate = ({ children }) => {
                     </div>
                 </Link>
                 <div className={StylesNav.subMenu}>
-                    <NavMenu title='Insights'><Insights/></NavMenu>
+                    <NavMenu  title='Insights'><Insights /></NavMenu>
                     <NavMenu title='Services'><Services/></NavMenu>
                     <NavMenu title='Industries'><Industries/></NavMenu>
                     <NavMenu title='Careers'><Careers/></NavMenu>
                     <NavMenu title='About Accenture'><AboutAccenture/></NavMenu>
                 </div>
             </div>
-            {insights && <div className={StylesNav.insights}>Insights true</div>}
             <div>{children}</div>
         </>
     )

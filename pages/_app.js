@@ -1,12 +1,16 @@
 import Navigate from "../components/Navigate"
-import 'bootstrap/dist/css/bootstrap.css'
+import "bootstrap/dist/css/bootstrap.css"
 import "../styles/globals.css"
+import { Provider } from "react-redux"
+import { store } from "../redux/store"
 
 function MyApp({ Component, pageProps }) {
     return (
-        <Navigate>
-            <Component {...pageProps} />
-        </Navigate>
+        <Provider store={store}>
+            <Navigate>
+                <Component {...pageProps} />
+            </Navigate>
+        </Provider>
     )
 }
 
