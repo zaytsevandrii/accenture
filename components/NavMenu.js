@@ -5,19 +5,15 @@ import StylesNav from "../styles/Navigate.module.scss"
 
 const NavMenu = (props) => {
     const [open, setOpen] = useState(false)
-    console.log('render menu')
+    /* console.log('render menu') */
     const sortRef=useRef()
+    /* console.log(sortRef.current) */
     useEffect(() => {
         const clickOutside = (event) => {
-            if (!event.path.includes(sortRef.current)) {
-                setOpen(false)
-    
-            }
+            console.log(event.path)
+        
         }
         document.body.addEventListener("click", clickOutside)
-        return () => {
-            document.body.removeEventListener("click", clickOutside)
-        }
     }, [])
 
      const changeVisible = () => {
@@ -34,3 +30,13 @@ const NavMenu = (props) => {
 }
 
 export default NavMenu
+
+
+
+  /*   if (!event.path.includes(sortRef.current)) {
+                setOpen(false)
+            }
+        }
+        document.body.addEventListener("click", clickOutside)
+        return () => {
+            document.body.removeEventListener("click", clickOutside) */

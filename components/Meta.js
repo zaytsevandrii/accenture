@@ -14,9 +14,9 @@ const Meta = ({ title, keywords, description }) => {
 }
 
 Meta.defaultProps = {
-  title: 'Accenture | Let there be change',
-  keywords: 'accenture, web development, programming, Let there be change',
-  description: 'Accenture embraces the power of change to create 360&#176; value and shared success for our clients, people, shareholders, partners and communities. Learn more.',
+  title: 'Dimax media | Let there be change',
+  keywords: 'dimax, media agency, create website, web development, programming, build website',
+  description: 'Dimax media embraces the power of change to create the fastest websites; value and shared success for our clients, people, shareholders, partners and communities. ',
 }
 
 export default Meta

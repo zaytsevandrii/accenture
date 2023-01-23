@@ -3,5 +3,5 @@ export const Navbars = [
     { name: 'Services',id:2},
     { name: 'Industries',id:3},
     { name: 'Careers',id:4},
-    { name: 'About Accenture',id:5 },
+    { name: 'About Us',id:5 },
   ];

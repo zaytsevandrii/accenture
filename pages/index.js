@@ -2,16 +2,17 @@ import Head from "next/head"
 import PropgressNav from "../components/PropgressNav"
 import styles from "../styles/Home.module.scss"
 import Carousel from "react-bootstrap/Carousel"
+import Wemake from "../components/MainPage/Wemake"
+import ChooseUs from "../components/MainPage/ChooseUs"
 export default function Home() {
-    console.log('render')
+    console.log("render")
     return (
         <>
-            <PropgressNav />
             <div className={styles.container}>
                 {/* <div className={styles.videoText}>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime sint libero eaque incidunt officiis modi!
                 </div> */}
-                <Carousel interval={2500}>
+                <Carousel interval={3900}>
                     <Carousel.Item>
                         <video autoPlay loop muted>
                             <source
@@ -20,8 +21,8 @@ export default function Home() {
                             />
                         </video>
                         <Carousel.Caption className={styles.videoText}>
-                            <h1>The art of AI maturity</h1>
-                            <p>Advancing from practice to performance</p>
+                            <h1>We create effective websites for your business</h1>
+                            <p>Build the fastest website</p>
                         </Carousel.Caption>
                     </Carousel.Item>
                     <Carousel.Item>
@@ -32,8 +33,8 @@ export default function Home() {
                             />
                         </video>
                         <Carousel.Caption className={styles.videoText}>
-                            <h1>Technology Vision 2022</h1>
-                            <p>Meet me in the metaverse</p>
+                            <h1>New Technology Vision</h1>
+                            <p>Dimax media. Meet me in the metaverse</p>
                         </Carousel.Caption>
                     </Carousel.Item>
 
@@ -45,7 +46,7 @@ export default function Home() {
                             />
                         </video>
                         <Carousel.Caption className={styles.videoText}>
-                            <h1>When you embrace change,you can make a world of difference</h1>
+                            <h1>We choose only modern and fast technologies in development</h1>
                         </Carousel.Caption>
                     </Carousel.Item>
                     <Carousel.Item>
@@ -60,6 +61,16 @@ export default function Home() {
                         </Carousel.Caption>
                     </Carousel.Item>
                 </Carousel>
+                <Wemake />
+                <ChooseUs/>
+                <h1>My page</h1>
+                <h1>My page</h1>
+                <h1>My page</h1>
+                <h1>My page</h1>
+                <h1>My page</h1>
+                <h1>My page</h1>
+                <h1>My page</h1>
+                <h1>My page</h1>
                 <h1>My page</h1>
             </div>
         </>
