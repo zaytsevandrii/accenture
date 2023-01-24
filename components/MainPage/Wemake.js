@@ -4,7 +4,8 @@ import styles from "../../styles/Home.module.scss"
 
 const Wemake = () => {
     return (
-        <div>
+        <>
+         <div>
             <ul className={styles.list}>
                 <div>
                     <li>E-commerce</li>
@@ -40,10 +41,13 @@ const Wemake = () => {
                     <li>Business Card</li>
                     <p>We pay particular attention to creating an emotional and bright brand impression.</p>
                     <Link href="/">To learn more</Link>
-                    <hr />
+                    
                 </div>
             </ul>
         </div>
+        
+        </>
+       
     )
 }
 

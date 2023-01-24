@@ -31,9 +31,9 @@ const ChooseUs = () => {
                     <div className={styles.choosebox}>
                         <div>
                             <p className={styles.num}>004</p>
-                            <li>Work Stage Reports</li>
+                            <li>Modern and the fastest technologies</li>
                         </div>
-                        <p className={styles.text}>Track results in real-time.</p>
+                        <p className={styles.text}>Kubernetes, Next js, AWS, Vite, React, Nest JS... and on and on and on.</p>
                     </div>
                     <div className={styles.choosebox}>
                         <div>

@@ -24,16 +24,21 @@ const Navigate = ({ children }) => {
                         <Image 
                             src={dimax}
                             alt="logo"
-                            width={150}
+                            style={{ width: '110%', height: 'auto' }}
                         />
                     </div>
                 </Link>
                 <div className={StylesNav.subMenu}>
-                    <NavMenu  title='Development'><Insights /></NavMenu>
+                    <Link href='/' className={StylesNav.navMenu}><li>Development</li></Link>
+                    <Link href='/design' className={StylesNav.navMenu}><li>Design</li></Link>
+                    <Link href='/' className={StylesNav.navMenu}><li>Portfolio</li></Link>
+                    <Link href='/' className={StylesNav.navMenu}><li>Careers</li></Link>
+                    <Link href='/' className={StylesNav.navMenu}><li>Our team</li></Link>
+                    {/* <NavMenu  title='Development'><Insights /></NavMenu>
                     <NavMenu title='Design'><Services/></NavMenu>
                     <NavMenu title='Portfolio'><Industries/></NavMenu>
                     <NavMenu title='Careers'><Careers/></NavMenu>
-                    <NavMenu title='Our team'><AboutAccenture/></NavMenu>
+                    <NavMenu title='Our team'><AboutAccenture/></NavMenu> */}
                 </div>
             </div>
             <div>{children}</div>
