@@ -33,7 +33,7 @@ const ChooseUs = () => {
                             <p className={styles.num}>004</p>
                             <li>Modern and the fastest technologies</li>
                         </div>
-                        <p className={styles.text}>Kubernetes, Next js, AWS, Vite, React, Nest JS... and on and on and on.</p>
+                        <p className={styles.text}>Kubernetes, Next js, GraphQL, AWS, Vite, React, Nest JS... and on and on and on.</p>
                     </div>
                     <div className={styles.choosebox}>
                         <div>

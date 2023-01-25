@@ -1,5 +1,5 @@
 @import url('https://fonts.cdnfonts.com/css/gilroy-bold');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 *{
   margin: 0;
   padding: 0;
@@ -56,4 +56,33 @@ a:hover{
   transform: scale(0.9);
   transform: translateY(-1100px);
   transition: opacity 300ms, transform 250ms;
+}
+
+
+.fade {
+  opacity: 0;
+  transform: translateY(20vh);
+  visibility: hidden;
+  transition: opacity 1200ms ease-out, transform 600ms ease-out,
+    visibility 1200ms ease-out;
+  will-change: opacity, transform, visibility;
+}
+.fade.visible {
+  opacity: 1;
+  transform: none;
+  visibility: visible;
+}
+
+.fadeLeft {
+  opacity: 0;
+  transform: translateX(-20vh);
+  visibility: hidden;
+  transition: opacity 1200ms ease-out, transform 600ms ease-out,
+    visibility 1200ms ease-out;
+  will-change: opacity, transform, visibility;
+}
+.fadeLeft.visibleL {
+  opacity: 1;
+  transform: none;
+  visibility: visible;
 }
