@@ -1,17 +1,13 @@
-import Head from "next/head"
-import PropgressNav from "../components/PropgressNav"
 import styles from "../styles/Home.module.scss"
 import Carousel from "react-bootstrap/Carousel"
 import Wemake from "../components/MainPage/Wemake"
 import ChooseUs from "../components/MainPage/ChooseUs"
+import NavRespons from "../components/Nav/NavRespon"
 export default function Home() {
     console.log("render")
     return (
         <>
             <div className={styles.container}>
-                {/* <div className={styles.videoText}>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime sint libero eaque incidunt officiis modi!
-                </div> */}
                 <Carousel interval={3900}>
                     <Carousel.Item>
                         <video autoPlay loop muted>
@@ -63,15 +59,7 @@ export default function Home() {
                 </Carousel>
                 <Wemake />
                 <ChooseUs/>
-                <h1>My page</h1>
-                <h1>My page</h1>
-                <h1>My page</h1>
-                <h1>My page</h1>
-                <h1>My page</h1>
-                <h1>My page</h1>
-                <h1>My page</h1>
-                <h1>My page</h1>
-                <h1>My page</h1>
+               
             </div>
         </>
     )

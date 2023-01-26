@@ -3,6 +3,7 @@
 .navbar {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     position: sticky;
     left: 0;
     top: 0;
@@ -12,6 +13,7 @@
     padding: 5px;
     box-shadow: 0 3px 6px rgb(0 0 0 / 9%);
     background: #fff;
+
 
     .imgCont {
         display: flex;
@@ -43,8 +45,7 @@
         .navMenu {
             --b: 0.1em; /* the thickness of the line */
             --c: #103fc1; /* the color */
-
-            color: #0000;
+            list-style: none;
             padding-block: var(--b);
             background: linear-gradient(var(--c) 50%, #000 0) 0% calc(100% - var(--_p, 0%)) / 100% 200%,
                 linear-gradient(var(--c) 0 0) 0% var(--_p, 0%) / var(--_p, 0%) var(--b) no-repeat;
@@ -58,6 +59,13 @@
             &:hover {
                 --_p: 100%;
                 --_s: 0.3s;
+            text-decoration: none;
+            }
+            &:active{
+                text-decoration: none;
+            }
+            &:link{
+                text-decoration: none;
             }
             .active {
                 font-weight: 600;

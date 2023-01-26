@@ -120,85 +120,97 @@ const design = () => {
                                 <div className="row">
                                     <div className="col-lg-6">
                                         <div className="main-title fadeleft">
-                                        <FadeInSectionL> <h2 className={styles.h2}>Web Development Process</h2></FadeInSectionL>
+                                            <FadeInSectionL>
+                                                {" "}
+                                                <h2 className={styles.h2}>Web Development Process</h2>
+                                            </FadeInSectionL>
                                         </div>
                                         <div className="pr-wrap row">
                                             <div className="col-md-6 pr-item fadetop">
-                                              <FadeInSection>
-                                                <div className={styles.processNum}>01</div>
-                                                <div className={styles.processText}>
-                                                    <h3>Planning</h3>
+                                                <FadeInSection>
+                                                    <div className={styles.processNum}>01</div>
+                                                    <div className={styles.processText}>
+                                                        <h3>Planning</h3>
 
-                                                    <p>
-                                                        A visual presentation of the structures and naming conventions used on the
-                                                        site should be set up.{" "}
-                                                    </p>
-                                                </div></FadeInSection>
+                                                        <p>
+                                                            A visual presentation of the structures and naming conventions used on
+                                                            the site should be set up.{" "}
+                                                        </p>
+                                                    </div>
+                                                </FadeInSection>
                                             </div>
                                             <div className="col-md-6 pr-item fadetop">
-                                              <FadeInSection>
-                                                <div className={styles.processNum}>02</div>
-                                                <div className={styles.processText}>
-                                                    <h3>Analysis</h3>
+                                                <FadeInSection>
+                                                    <div className={styles.processNum}>02</div>
+                                                    <div className={styles.processText}>
+                                                        <h3>Analysis</h3>
 
-                                                    <p>The analysis of competitors and new trends, research, and case study.</p>
-                                                </div></FadeInSection>
+                                                        <p>
+                                                            The analysis of competitors and new trends, research, and case study.
+                                                        </p>
+                                                    </div>
+                                                </FadeInSection>
                                             </div>
                                             <div className="col-md-6 pr-item fadetop">
-                                              <FadeInSection>
-                                                <div className={styles.processNum}>03</div>
-                                                <div className={styles.processText}>
-                                                    <h3>Design</h3>
+                                                <FadeInSection>
+                                                    <div className={styles.processNum}>03</div>
+                                                    <div className={styles.processText}>
+                                                        <h3>Design</h3>
 
-                                                    <p>
-                                                        {" "}
-                                                        Construction of visuals, elaboration of layout details, and animation of
-                                                        the website elements.
-                                                    </p>
-                                                </div></FadeInSection>
+                                                        <p>
+                                                            {" "}
+                                                            Construction of visuals, elaboration of layout details, and animation
+                                                            of the website elements.
+                                                        </p>
+                                                    </div>
+                                                </FadeInSection>
                                             </div>
                                             <div className="col-md-6 pr-item fadetop">
-                                              <FadeInSection>
-                                                <div className={styles.processNum}>04</div>
-                                                <div className={styles.processText}>
-                                                    <h3>Implementations</h3>
+                                                <FadeInSection>
+                                                    <div className={styles.processNum}>04</div>
+                                                    <div className={styles.processText}>
+                                                        <h3>Implementations</h3>
 
-                                                    <p>
-                                                        Content development and publishing, media elements selection, and applying
-                                                        them to a prototype.
-                                                    </p>
-                                                </div></FadeInSection>
+                                                        <p>
+                                                            Content development and publishing, media elements selection, and
+                                                            applying them to a prototype.
+                                                        </p>
+                                                    </div>
+                                                </FadeInSection>
                                             </div>
                                             <div className="col-md-6 pr-item fadetop">
-                                              <FadeInSection>
-                                                <div className={styles.processNum}>05</div>
-                                                <div className={styles.processText}>
-                                                    <h3>Testing</h3>
+                                                <FadeInSection>
+                                                    <div className={styles.processNum}>05</div>
+                                                    <div className={styles.processText}>
+                                                        <h3>Testing</h3>
 
-                                                    <p>
-                                                        This is to ensure that the necessary functions of the website are working
-                                                        fine and are without errors.
-                                                    </p>
-                                                </div></FadeInSection>
+                                                        <p>
+                                                            This is to ensure that the necessary functions of the website are
+                                                            working fine and are without errors.
+                                                        </p>
+                                                    </div>
+                                                </FadeInSection>
                                             </div>
                                             <div className="col-md-6 pr-item fadetop">
-                                              <FadeInSection>
-                                                <div className={styles.processNum}>06</div>
-                                                <div className={styles.processText}>
-                                                    <h3>Maintanance</h3>
-                                                    <p>
-                                                        Websites are like “living” entities and need constant care and
-                                                        maintenance.
-                                                    </p>
-                                                </div></FadeInSection>
+                                                <FadeInSection>
+                                                    <div className={styles.processNum}>06</div>
+                                                    <div className={styles.processText}>
+                                                        <h3>Maintanance</h3>
+                                                        <p>
+                                                            Websites are like “living” entities and need constant care and
+                                                            maintenance.
+                                                        </p>
+                                                    </div>
+                                                </FadeInSection>
                                             </div>
                                         </div>
                                     </div>
-                                    
-                                        <div className="col-lg-6"><div className={styles.imageDev}>
+
+                                    <div className="col-lg-6">
+                                        <div className={styles.imageDev}>
                                             <div className="video-wrap">
                                                 <div>
-                                                    <Image src={img} width={400} height={400} />
+                                                    <Image src={img} width={400} height={400} alt="Web Development Process" />
                                                 </div>
                                             </div>
                                         </div>
@@ -209,6 +221,7 @@ const design = () => {
                     </div>
                 </div>
             </section>
+            
         </>
     )
 }
