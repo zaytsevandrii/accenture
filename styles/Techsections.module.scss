@@ -1,0 +1,68 @@
+@import url("https://fonts.cdnfonts.com/css/gilroy-bold");
+
+.first {
+    margin-top: 150px;
+}
+
+.body {
+    display: flex;
+    overflow: hidden;
+    @media (max-width: 768px) {
+    }
+    z-index: 3;
+}
+
+
+
+.title {
+    margin: 120px 0px;
+    @media (max-width: 1400px) {
+        margin: 120px 0px;
+    }
+    @media (max-width: 992px) {
+        margin: 90px 0px;
+    }
+    @media (max-width: 768px) {
+        margin: 0px 0px;
+    }
+    .bigtext {
+        background: -webkit-linear-gradient(white, #38495a);
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: white;
+        font-size: 60px;
+        font-family: "Poppins", sans-serif;
+        background-color: red;
+        z-index: 2;
+        background-color: blue;
+        flex: 2;
+
+        span {
+            color: lightskyblue;
+        }
+        @media (max-width: 1400px) {
+            font-size: 43px;
+        }
+        @media (max-width: 992px) {
+        }
+        @media (max-width: 768px) {
+            font-size: 28px;
+            margin-top: 40px;
+            margin-bottom: 40px;
+        }
+    }
+
+    p {
+        font-size: 18px;
+        color: white;
+        font-family: "Poppins", sans-serif;
+        font-weight: 300;
+
+        @media (max-width: 768px) {
+            margin-bottom: 40px;
+        }
+    }
+    .smalltext {
+        color: white;
+    }
+}
