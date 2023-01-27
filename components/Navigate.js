@@ -5,11 +5,10 @@ import Footer from "./Footer"
 import Meta from "./Meta"
 import dimax from "../public/Dimax.png"
 import Image from "next/image"
-import DropDown from "./DropDown"
 
 const Navigate = ({ children }) => {
     console.log("navrender")
-
+   
     return (
         <>
             <Meta />
@@ -23,10 +22,11 @@ const Navigate = ({ children }) => {
                     <div className={StylesNav.navMenu}>
                         Development
                         <div className={StylesNav.navMenuAbs}>
-                            <Link href="/">Development</Link>
-                            <Link href="/">Developer</Link>
-                            <Link href="/">Developer</Link>
-                            <Link href="/">Developer</Link>
+                            <Link href="/">Landing page</Link>
+                            <Link href="/">Promo Website</Link>
+                            <Link href="/">Corporate Website</Link>
+                            <Link href="/">Business Website</Link>
+                            <Link href="/">E-commerce</Link>
                         </div>
                         
                     </div>

@@ -1,3 +1,4 @@
+import Link from "next/link"
 import React from "react"
 
 const Footer = () => {
@@ -34,7 +35,7 @@ const Footer = () => {
                         <h5 className="text-uppercase">INFORMATION</h5>
                         <ul className="list-unstyled">
                             <li>
-                                <a href="#!">About us</a>
+                                <Link href="/about">About us</Link>
                             </li>
                             <li>
                                 <a href="#!">Services</a>

@@ -5,6 +5,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 
 html,
@@ -291,6 +292,18 @@ a {
         text-decoration: none !important;
     }
 }
+
+
+.counter__item{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 0px 0px;
+    margin-bottom: 30px;
+}
+
+
 
 
   
