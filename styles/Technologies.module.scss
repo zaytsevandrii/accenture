@@ -6,7 +6,8 @@
     color: white;
     position: relative;
     /* Create the parallax scrolling effect */
-    background-attachment: fixed;
+   /*  background-attachment: fixed; */
+   background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -15,6 +16,10 @@
 @supports (-webkit-touch-callout: none) {
     .parallax{
         background-attachment: scroll;
+        background-size:auto ;
+    }
+    .parallax::before{
+        background-color: rgba(0, 0, 0, 0.795);
     }
   }
 
