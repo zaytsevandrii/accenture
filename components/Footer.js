@@ -17,16 +17,16 @@ const Footer = () => {
                         <h5 className="text-uppercase">Services</h5>
                         <ul className="list-unstyled">
                             <li>
-                                <a href="#!">Landing page</a>
+                                <Link href="#!">Landing page</Link>
                             </li>
                             <li>
-                                <a href="#!">E-commerce</a>
+                                <Link href="#!">E-commerce</Link>
                             </li>
                             <li>
-                                <a href="#!">Corporate WebSites</a>
+                                <Link href="#!">Corporate WebSites</Link>
                             </li>
                             <li>
-                                <a href="#!">Business WebSite</a>
+                                <Link href="#!">Business WebSite</Link>
                             </li>
                         </ul>
                     </div>
@@ -35,16 +35,16 @@ const Footer = () => {
                         <h5 className="text-uppercase">INFORMATION</h5>
                         <ul className="list-unstyled">
                             <li>
-                                <a href="/about">About us</a>
+                                <Link href="/about">About us</Link>
                             </li>
                             <li>
-                                <a href="#!">Services</a>
+                                <Link href="#!">Services</Link>
                             </li>
                             <li>
-                                <a href="#!">Portfolio</a>
+                                <Link href="#!">Portfolio</Link>
                             </li>
                             <li>
-                                <a href="#!">Marketing</a>
+                                <Link href="#!">Marketing</Link>
                             </li>
                         </ul>
                     </div>

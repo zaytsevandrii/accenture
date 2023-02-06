@@ -8,7 +8,6 @@ const Counter = ({ target, span,id,text }) => {
     const inrement = target / 100
     const speed = 2000/target
     
-    console.log(id)
     
     useEffect(() => {
         
@@ -22,7 +21,7 @@ const Counter = ({ target, span,id,text }) => {
         }
         updateCounter()
         
-    }, [])
+    }, [target])
 
     return (
         <>
