@@ -9,7 +9,7 @@ const AboutInside = ({ num, title, text }) => {
             <FadeInSection>
                 <div className={styles.serblock}>
                     <div className={styles.serblocknum}>
-                        <Image src={num} width={130} className={styles.img}/>
+                        <Image alt={title} src={num} width={130} className={styles.img}/>
                         <h3>{title}</h3>
                     </div>
                     <div className={styles.sertext}>

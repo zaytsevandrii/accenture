@@ -35,7 +35,7 @@ const Footer = () => {
                         <h5 className="text-uppercase">INFORMATION</h5>
                         <ul className="list-unstyled">
                             <li>
-                                <Link href="/about">About us</Link>
+                                <a href="/about">About us</a>
                             </li>
                             <li>
                                 <a href="#!">Services</a>

@@ -24,13 +24,13 @@ const FirstTechSection = () => {
                                         <div className={styles.smalltext}>
                                             <p>
                                                 Page speed is the most important of SEO factors, because addressing loading times
-                                                improves your rankings, your user experience and your conversion rate too. It's a
+                                                improves your rankings, your user experience and your conversion rate too. It is a
                                                 rare example of an SEO measure that is a win for absolutely everyone!
                                             </p>
                                             <p>
                                                 User experience is really the big reason that search engines think website speed
-                                                is such an important factor, and that's why it's part of their ranking algorithms.
-                                                It's a universally acknowledged fact that on the internet, no-one has an attention
+                                                is such an important factor, and that is why it is part of their ranking algorithms.
+                                                It is a universally acknowledged fact that on the internet, no-one has an attention
                                                 span of more than a couple of seconds.
                                             </p>
                                         </div>

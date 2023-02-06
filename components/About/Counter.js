@@ -17,7 +17,7 @@ const Counter = ({ target, span,id,text }) => {
                 setSum(prev => (prev < target ? Math.ceil(prev + inrement):target))
                 setTimeout(updateCounter, speed)
             }else{
-                setSum(prev=>prev=target)
+                setSum((prev) => (prev = target))
             }
         }
         updateCounter()

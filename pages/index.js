@@ -7,6 +7,7 @@ export default function Home() {
     console.log("render")
     return (
         <>
+
             <div className={styles.container}>
                 <Carousel interval={3900}>
                     <Carousel.Item>

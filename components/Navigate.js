@@ -5,14 +5,15 @@ import Footer from "./Footer"
 import Meta from "./Meta"
 import dimax from "../public/Dimax.png"
 import Image from "next/image"
+import { useRef } from "react"
 
 const Navigate = ({ children }) => {
-    console.log("navrender")
-   
+ const inputRef = useRef()
+
     return (
         <>
             <Meta />
-            <div className={StylesNav.navbar}>
+            <div className={StylesNav.navbar} ref={inputRef}>
                 <Link className={StylesNav.imgCont} href="/">
                     <div>
                         <Image src={dimax} alt="logo" style={{ width: "110%", height: "auto" }} />
@@ -22,11 +23,11 @@ const Navigate = ({ children }) => {
                     <div className={StylesNav.navMenu}>
                         Development
                         <div className={StylesNav.navMenuAbs}>
-                            <Link href="/">Landing page</Link>
-                            <Link href="/">Promo Website</Link>
-                            <Link href="/">Corporate Website</Link>
-                            <Link href="/">Business Website</Link>
-                            <Link href="/">E-commerce</Link>
+                            <Link href="/development/landing" >Landing page</Link>
+                            <Link href="/development/promo">Promo Website</Link>
+                            <Link href="/development/corporate">Corporate Website</Link>
+                            <Link href="/development/business">Business Website</Link>
+                            <Link href="/development/ecommerce">E-commerce</Link>
                         </div>
                         
                     </div>
@@ -55,10 +56,4 @@ const Navigate = ({ children }) => {
 
 export default Navigate
 
-{
-    /* <Link className={StylesNav.imgCont} href="/">
-    <div>
-        <Image src={dimax} alt="logo" style={{ width: "110%", height: "auto" }} />
-    </div>
-</Link> */
-}
+

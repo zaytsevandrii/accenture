@@ -7,9 +7,9 @@
     position: relative;
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
-    background-position: center;
+    background-position: center center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: auto;
     z-index: -2;
 }
 

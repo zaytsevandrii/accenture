@@ -6,9 +6,21 @@ import styles from "../styles/Design.module.scss"
 import img from "../public/development-process2.png"
 import FirstSection from "../components/Design/FirstSection"
 
+
 const design = () => {
+
     return (
         <>
+            <FirstSection/>
+            <FirstSection/>
+            <FirstSection/>
+            <FirstSection/>
+            <FirstSection/>
+            <FirstSection/>
+            <FirstSection/>
+            <FirstSection/>
+            <FirstSection/>
+            <FirstSection/>
             <FirstSection/>
             <section className="fw-main-row">
                 <div className={styles.service}>
