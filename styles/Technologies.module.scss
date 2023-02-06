@@ -10,10 +10,11 @@
    background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100vh;
     z-index: -2;
 }
-@supports (-webkit-touch-callout: none) {
+
+/* @supports (-webkit-touch-callout: none) {
     .parallax{
         background-attachment: scroll;
         background-size:auto ;
@@ -21,7 +22,7 @@
     .parallax::before{
         background-color: rgba(0, 0, 0, 0.795);
     }
-  }
+  } */
 
 
 .parallax::before{
