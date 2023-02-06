@@ -4,7 +4,6 @@ import Wemake from "../components/MainPage/Wemake"
 import ChooseUs from "../components/MainPage/ChooseUs"
 export default function Home() {
    
-    console.log("render")
     return (
         <>
 
